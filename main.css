@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre-a-loja {
+    padding-bottom: 48px;
+}
+
+body {
+    background-color: #ccd0db;
+}
+
+header {
+    background-color: #3868d6;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+
+h1 {
+    font-style: italic;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 32px;
+    
+}
+
+.container img {
+    max-width: 400px;
+}
+
+div h2 {
+    color: #3868d6;
+    font-style: italic;
+    border-bottom: 3px solid #3868d6;
+    padding-bottom: 16px;
+}
+
+.texto {
+    padding-top: 32px;
+    text-align: justify;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.lista-produtos > li {
+    list-style: none;
+    max-width: 23%;
+    margin-top: 24px;
+    margin-left: 2%;
+}
+
+.lista-produtos img {
+    max-width: 100%;
+    width: 250px;
+    margin-top: 48px;
+}
+
+li h3 {
+    margin-top: 16px;
+}
+
+li p {
+    margin-top: 8px;
+}
+
+li button {
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color:  #3868d6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px ) {
+    .container {
+        max-width: 90%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .conteudo img {
+        max-width: 700px;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 32px;
+    }
+
+    .lista-produtos li {
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 16px;
+    }
+
+    .lista-produtos {
+        display: block;
+    }
+
+    .lista-produtos li {
+        text-align: center;
+    }
+
+    .lista-produtos li img {
+        max-width: 300px;
+    }
+
+    .lista-produtos h3,
+    .lista-produtos p {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
