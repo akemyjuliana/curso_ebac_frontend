@@ -74,7 +74,7 @@ div h2 {
 }
 
 .lista-produtos img {
-    max-width: 100%;
+    
     width: 250px;
     margin-top: 48px;
 }
@@ -122,9 +122,12 @@ li button {
         margin-top: 32px;
     }
 
+    .lista-produtos {
+        flex-wrap: wrap;
+    }
+
     .lista-produtos li {
-    display: flex;
-    flex-wrap: wrap;
+        max-width: 40%;
     }
 }
 
@@ -142,11 +145,13 @@ li button {
     }
 
     .lista-produtos {
-        display: block;
+        flex-direction: column;
     }
 
     .lista-produtos li {
+        max-width: 100%;
         text-align: center;
+        
     }
 
     .lista-produtos li img {
