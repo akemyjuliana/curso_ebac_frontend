@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: variaveis.$corPrincipal;
+}
+
+h1,
+h2 {
+    color: variaveis.$corTitulo;
+    font-size: variaveis.$tamanhoTitulo;
+}
+
+p {
+    color: variaveis.$corParagrafo;
+    font-size: variaveis.$tamanhoParagrafo;
+}
+
+img {
+    max-width: 200px;
+}
